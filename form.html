@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Formularz</title>
+    </head>
+    <body>
+        <h1>Biblioteka</h1>
+        <h3>Dodawanie nowej książki</h3>
+        <form action="/adding-new-book" method="POST">
+            <label for="title">Tytuł</label>
+            <input type="text" id="tytuł" name="tytuł">
+            <br><br>
+            <label for="autor">Autor</label>
+            <input type="text" id="autor" name="autor">
+            <br><br>
+            <label for="data">Data wydania</label>
+            <input type="date" id="data" name="data">
+            <br><br>
+            <label for="pages">Liczba stron</label>
+            <input type="number" id="pages" name="pages">
+            <br><br>
+            <label for="cover">Kolor okładki</label>
+            <input type="color" id="cover" name="cover">
+            <br><br>
+            <label for="zdjecie">Kolor okładki</label>
+            <input type="file" id="zdjecie" name="zdjecie">
+            <br><br>
+            <button type="reset">Resetuj</button>
+            <button type="submit">Wyślij</button>
+        </form>
+    </body>
+</html>
