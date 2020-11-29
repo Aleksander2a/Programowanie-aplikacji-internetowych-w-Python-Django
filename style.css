@@ -1,4 +1,4 @@
-.menu {
+/* .menu {
     background-color: blue;
     float: left;
     width: 20%;
@@ -9,6 +9,14 @@
     background-color: greenyellow;
     float: right;
     width: 80%;
+} */
+
+.col-3 {
+    background-color: greenyellow;
+}
+
+.col-9 {
+    background-color: aqua;
 }
 
 h1 {
