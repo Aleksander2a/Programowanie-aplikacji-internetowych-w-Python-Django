@@ -12,3 +12,10 @@ szczur
 jaszczurka
 dinozaur
 papuga
+delfin
+mamut
+kuna
+wydra
+tygrys
+lew
+kogut

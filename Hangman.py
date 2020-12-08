@@ -44,5 +44,5 @@ while (True):
             blad2 = x
             print("\nNie, \"",x,"\" nie wystepuje w slowie, popelnione bledy: \"",blad1,"\",\"",blad2,"\" pozostalo zyc:",zycia)
         if (zycia == 0):
-            print("Koniec gry... chodzilo o slowo:",odpowiedz)
+            print("\nKoniec gry... chodzilo o slowo:",odpowiedz)
             break
