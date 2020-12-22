@@ -19,7 +19,7 @@ from books.views import main, form, books_list # dopisane
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('main/', main), # dopisane
+    path('', main), # dopisane
     path('form/', form), # dopisane
     path('books/', books_list), #dopisane
 ]
