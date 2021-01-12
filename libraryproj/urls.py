@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from books.views import main, form, books_list # dopisane
+from django.conf import settings
+from django.conf.urls.static import static
+from books.views import main, form, books_list, books_details 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main, name="main"), # dopisane
     path('form/', form, name="form"), # dopisane
     path('books/', books_list, name="book_list"), #dopisane
-]
+    path('book/<int:book_id>', books_details, name="books_details")
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

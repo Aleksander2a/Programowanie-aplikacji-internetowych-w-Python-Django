@@ -6,8 +6,8 @@
     <div class="row">
     {% for book in books %}
     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
-        <div class="card" style="width: 18rem;">
-            <img src="https://alicjamakota.pl/wp-content/uploads/2016/08/tradycyjna-ksiazka.jpg" class="card-img-top" alt="...">
+        <div class="card" style="height: 450px;">
+            <img src="/media/{{ book.cover }}" style="height: 200px;" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">{{book.title}}</h5>
               <p class="card-text">
@@ -17,10 +17,11 @@
                       <li>Data publikacji: {{book.published_at}}</li>
                   </ul>
               </p>
-              <a href="https://facebook.com" class="btn btn-primary">Facebook</a>
+              <a href="{% url 'books_details' book.id %}" class="btn btn-primary">Więcej...</a>
             </div>
-          </div>
         </div>
+        <br>
+    </div>
     {% endfor %}
     </div>
 
