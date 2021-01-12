@@ -2,7 +2,10 @@
 
 {% block content %}
     <h1>Lista książek</h1>
+
+    <div class="row">
     {% for book in books %}
+    <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3">
         <div class="card" style="width: 18rem;">
             <img src="https://alicjamakota.pl/wp-content/uploads/2016/08/tradycyjna-ksiazka.jpg" class="card-img-top" alt="...">
             <div class="card-body">
@@ -17,7 +20,8 @@
               <a href="https://facebook.com" class="btn btn-primary">Facebook</a>
             </div>
           </div>
-
+        </div>
     {% endfor %}
+    </div>
 
 {% endblock content %}
